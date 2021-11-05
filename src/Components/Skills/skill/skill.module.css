@@ -1,0 +1,15 @@
+.skill {
+    margin: 10px 0;
+    width: 270px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divImg > img {
+    width: 100px;
+    height: 100px;
+}

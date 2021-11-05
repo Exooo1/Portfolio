@@ -1,0 +1,28 @@
+.mainStyle {
+    background-color: #70a0e7;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.description {
+border: solid;
+}
+
+.divAvatar{
+    border: solid;
+}
+
+.divAvatar > img {
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+}

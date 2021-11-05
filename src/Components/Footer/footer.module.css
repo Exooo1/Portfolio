@@ -1,0 +1,21 @@
+.foot {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.footContainer {
+    flex-direction: column;
+}
+
+.blocks {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks > div {
+    width: 60px;
+    height: 60px;
+    background-color: moccasin;
+    /*width: 70px;*/
+}
