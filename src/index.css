@@ -1,13 +1,38 @@
+html {
+    font-family: Ppopins, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, #FA0874, #FFC446);
+    box-shadow: 0 10px 0 1px #111;
+    border: none;
+}
+
+body::-webkit-scrollbar-track {
+    /*border-radius: 100px;*/
+    background-color: #111;
+    /*background: linear-gradient(#D5EAF5, #F5DDDA);*/
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

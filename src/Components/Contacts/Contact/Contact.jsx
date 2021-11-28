@@ -1,12 +1,13 @@
-import React from "react";
-import style from './contact.module.css'
+import {ContactStyle} from "./ContactStyled";
 
-export const Contact = () => {
-    return <form action="" className={style.contact}>
-        <div className={style.inputs}>
-            <input type="text"/>
-            <input type="text"/>
-            <textarea name="" id="" cols="30" rows="10"/>
+export const Contact = ({type, text, src}) => {
+    return <ContactStyle>
+        <img
+            src={src}
+            alt={type}/>
+        <div>
+            <h3>{type}</h3>
+            <p>{text}</p>
         </div>
-    </form>
+    </ContactStyle>
 }

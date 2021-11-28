@@ -1,18 +1,23 @@
 import React from "react";
-import styleContainer from '../common/styles/container.module.css'
-import style from './projects.module.css'
-import {Projec} from "./Project/Projec";
+import {CreateProject} from "./Project/CreateProject";
+import {ProjectsStyle} from "./ProjectsStyled";
+import {CommonStyle} from "../common/CommonStyled";
+import samurai from '../../Image/samurai.png'
+import todo from '../../Image/todo.jpg'
+import duo from '../../Image/duo.png'
 
 export const Projects = () => {
-    return <div className={style.projectsStyle}>
-        <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-            <h2 className={style.title}>My Projects</h2>
-            <div className={style.projects}>
-                <Projec/>
-                <Projec/>
-                <Projec/>
-                <Projec/>
-            </div>
+    return <ProjectsStyle id={'projects'}>
+        <div className='s'>
+            <h1><span>MY</span> PROJECTS</h1>
+            <h2>PORTFOLIO</h2>
         </div>
-    </div>
+        <CommonStyle>
+            <CreateProject title={'SocialNetwork'} project={samurai}/>
+            <CreateProject title={'TodoList'} project={todo}/>
+            <CreateProject title={'Lingualeo'} project={duo}/>
+            <CreateProject title={'Lingualeo'} project={duo}/>
+            <CreateProject title={'Lingualeo'} project={duo}/>
+        </CommonStyle>
+    </ProjectsStyle>
 }

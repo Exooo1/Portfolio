@@ -1,18 +1,14 @@
 import React from "react";
-import style from './skill.module.css'
+import {SkillStyled} from "./SkillStyled";
 
-export const Skill = () => {
-    return <div className={style.skill}>
-        <div className={style.divImg}>
-            <img src="https://i0.wp.com/www.primefaces.org/wp-content/uploads/2017/09/feature-react.png?ssl=1"
-                 alt="skill"/>
-        </div>
+export const Skill = ({skill, color, src, description}) => {
+    return <SkillStyled boxColor={`0 0 20px ${color}`} colorText={color}>
         <div>
-            <h2>React</h2>
+            <img
+                src={src}
+                alt="skill"/>
         </div>
-        <div>
-            <p>The account provided by the spokesman matches the description on the citation and the accounts given
-                separately by Kawasaki and Revak.</p>
-        </div>
-    </div>
+        <h2>{skill}</h2>
+        <p>{description}</p>
+    </SkillStyled>
 }

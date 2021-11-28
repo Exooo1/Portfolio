@@ -1,15 +1,24 @@
 import React from "react";
-import style from './main.module.css'
-import containerStyle from '../common/styles/container.module.css'
+import {AvatarStyle, DescriptionStyle, MainStyle} from "./MainStyled";
+import {ContainerStyled} from "../common/CommonStyled";
+import me from '../../Image/me.png'
 
 export const Main = () => {
-    return <div className={style.mainStyle}>
-        <div className={containerStyle.container}>
-            <div className={style.description}>
-                <h1>Hello my name is Vlas</h1>
-                <span>i am a frontend developer</span>
+    return <MainStyle id='home'>
+        <ContainerStyled>
+            <div className='image'>
+                <img src={me}
+                     alt="avatar"/>
             </div>
-            <div className={style.divAvatar}><img src="https://vibirai.ru/image/1044019.w640.jpg" alt="avatar"/></div>
-        </div>
-    </div>
+            <AvatarStyle></AvatarStyle>
+            <DescriptionStyle>
+                <h1>- I'M VLAS MASKALENCHIK.</h1>
+                <h1>FRONTEND DEVELOPER</h1>
+                <p>I'm a Tunisian based web designer & front‑end developer focused on crafting
+                    clean & user‑friendly
+                    experiences, I am passionate about building excellent software that improves the lives of those
+                    around me.</p>
+            </DescriptionStyle>
+        </ContainerStyled>
+    </MainStyle>
 }
