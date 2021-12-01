@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const EmailMain = styled.div`
   height: 360px;
   width: 100%;
-  //margin: 20px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -75,21 +74,5 @@ export const EmailStyle = styled.div`
     letter-spacing: 1px;
     opacity: 0.5;
     padding-left: 10px;
-  }
-`
-
-export const StyledEmails = styled.div`
-  background-color: blue;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-
-  & > div {
-    width: 230px;
-    height: 100px;
-    background-color: green;
   }
 `

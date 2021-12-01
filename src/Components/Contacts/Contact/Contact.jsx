@@ -1,6 +1,8 @@
 import {ContactStyle} from "./ContactStyled";
+import {memo} from "react";
 
-export const Contact = ({type, text, src}) => {
+
+export const Contact = memo(({type, text, src}) => {
     return <ContactStyle>
         <img
             src={src}
@@ -10,4 +12,4 @@ export const Contact = ({type, text, src}) => {
             <p>{text}</p>
         </div>
     </ContactStyle>
-}
+})

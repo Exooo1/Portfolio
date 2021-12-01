@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
 export const MainStyle = styled.div`
   background-color: #111;
@@ -25,6 +25,27 @@ export const AvatarStyle = styled.div`
   //  //height: 500px;
   //}
 `
+const spanAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+const h1Animation = keyframes`
+  from {
+    font-size: 10px;
+    opacity: 0.3;
+    transform: translate(0px, -250px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+`;
 
 export const DescriptionStyle = styled.div`
   font-family: Ppopins, sans-serif;
@@ -34,7 +55,15 @@ export const DescriptionStyle = styled.div`
   justify-content: flex-end;
   flex-direction: column;
 
+  & > .animationText {
+    animation: ${h1Animation} 900ms linear;
+  }
+
   & > h1 {
+    & > span {
+      animation: ${spanAnimation} 500ms linear infinite;
+    }
+
     font-size: 35px;
     font-weight: 800;
     letter-spacing: 1px;

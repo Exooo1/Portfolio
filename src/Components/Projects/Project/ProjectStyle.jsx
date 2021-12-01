@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const ProjectStyle = styled.div`
+export const ProjectStyle = styled.a`
+  text-decoration: none;
   cursor: pointer;
   margin: 40px 0;
   display: flex;

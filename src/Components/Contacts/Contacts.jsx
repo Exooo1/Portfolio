@@ -1,18 +1,11 @@
-import React from "react";
+import React, {memo} from "react";
 import {Contact} from "./Contact/Contact";
 import {ContactsStyle} from "./StyledContacts";
-import phone from '../../Image/phone.png'
-import email from '../../Image/email.png'
-import location from '../../Image/location.png'
 import {Email} from "./Email/Email";
+import {useSelector} from "react-redux";
 
-const contacts = [
-    {id: 1, type: 'Phone', text: '+375 (44) 513-13-68', src: phone},
-    {id: 2, type: 'Email', text: 'vlasmaskalenchik1998@gmail.com', src: email},
-    {id: 3, type: 'Location', text: 'Minsk, Belarus', src: location}
-]
-
-export const Contacts = () => {
+export const Contacts = memo(() => {
+    const contacts = useSelector(state=>state.contacts.contacts)
     return <ContactsStyle id={'contacts'}>
         <h1>GET IN TOUCH</h1>
         <div>"</div>
@@ -26,4 +19,4 @@ export const Contacts = () => {
             </div>
         </div>
     </ContactsStyle>
-}
+})

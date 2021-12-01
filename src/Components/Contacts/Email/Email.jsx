@@ -1,6 +1,7 @@
-import {EmailMain, EmailStyle, StyledEmails} from "./EmailStyled";
+import {EmailMain, EmailStyle} from "./EmailStyled";
+import {memo} from "react";
 
-export const Email = () => {
+export const Email = memo(() => {
     return <EmailMain>
         <EmailStyle>
             <input type="text" placeholder={'Your Email'}/>
@@ -9,4 +10,4 @@ export const Email = () => {
         <textarea placeholder='Your Message...'/>
         <button>Send</button>
     </EmailMain>
-}
+})

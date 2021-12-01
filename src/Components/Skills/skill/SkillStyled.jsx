@@ -1,10 +1,20 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const skillAnim = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const SkillStyled = styled.div`
+  animation: ${skillAnim} ${props => props.timeAnim || '1s'} linear;
   box-shadow: ${props => props.boxColor || "0 0 10px black"};
   margin: 30px 0;
   width: 400px;
-  min-height: 550px;
+  min-height: 500px;
   background: black;
   display: flex;
   flex-direction: column;
@@ -44,5 +54,4 @@ export const SkillStyled = styled.div`
   & > div > img {
     width: 50%;
   }
-
 `

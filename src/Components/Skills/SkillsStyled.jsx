@@ -1,4 +1,13 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const h2Animation = keyframes`
+  from {
+    transform: translate(250px, 0px);
+  }
+  to {
+    //transform: translate(0px, 0px);
+  }
+`
 
 export const SkillsStyle = styled.div`
   min-height: 100vh;
@@ -6,6 +15,7 @@ export const SkillsStyle = styled.div`
 
   & > .containerSkills {
     & > h2 {
+      animation: ${h2Animation} 1s linear;
       position: relative;
       top: -93px;
       letter-spacing: 3px;

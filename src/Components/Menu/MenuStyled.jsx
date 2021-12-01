@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const DivStyle = styled.div`
+  position: absolute;
+  width: 5px;
+  height: 190px;
+  background-color: #111;
+  margin-left: 27px;
+`
+export const ChildDivStyle = styled.div`
+  background-color: #FFB400;
+  height: ${props => props.size}px;
+`
+
 export const MenuStyle = styled.div`
   position: fixed;
   left: 92%;
@@ -11,52 +23,88 @@ export const MenuStyle = styled.div`
     display: none;
   }
 
-  & > div {
-    height: 30%;
+  & > .divStyle {
+    height: 35%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
+    //
+    //& > a:hover {
+    //  transform: scale(1.2);
+    //  transition: 1.1s;
+    //}
+    //
+    //& > a:hover::after {
+    //  content: attr(title);
+    //  position: relative;
+    //  width: 20px;
+    //  display: block;
+    //  color: floralwhite;
+    //  font-weight: 700;
+    //  left: -75px;
+    //  border-radius: 90px;
+    //  top: -35px;
+    //}
+    //
+    //& > a {
+    //  z-index: 10;
+    //  text-decoration: underline;
+    //  text-underline-offset: 3px;
+    //  color: grey;
+    //  border-radius: 50%;
+    //  width: 60px;
+    //  height: 60px;
+    //  background-color: #2B2A2A;
+    //
+    //
+    //  & > img {
+    //    width: 60%;
+    //    padding-top: 10px;
+    //  }
+    //}
+    //
+    //& > a:hover {
+    //  background-color: #FFB400;
+    //}
+  }
+`
 
-    & > a:hover {
-      transform: scale(1.2);
-      transition: 1.1s;
-    }
+export const LinkStyle = styled.a`
+  z-index: 10;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: grey;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  //background-color: #2B2A2A;
+  background-color: ${props => props.color};
 
-    & > a:hover::after {
-      content: attr(title);
-      position: relative;
-      width: 20px;
-      display: block;
-      color: floralwhite;
-      font-weight: 700;
-      left: -75px;
-      border-radius: 90px;
-      top: -35px;
-    }
+  & > img {
+    width: 60%;
+    padding-top: 10px;
+  }
 
-    & > a {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      color: grey;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      background-color: #2B2A2A;
-      //display: flex;
-      //flex-direction: column;
-      //align-items: center;
-      //justify-content: center;
+  &:hover {
+    background-color: #FFB400;
+  }
 
-      & > img {
-        width: 60%;
-        padding-top: 10px;
-      }
-    }
+  &:hover {
+    transform: scale(1.2);
+    transition: 1.1s;
+  }
 
-    & > a:hover {
-      background-color: #FFB400;
-    }
+  &:hover::after {
+    content: attr(title);
+    position: relative;
+    width: 20px;
+    display: block;
+    color: floralwhite;
+    font-weight: 700;
+    left: -75px;
+    border-radius: 90px;
+    top: -35px;
   }
 `
 

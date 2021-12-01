@@ -17,7 +17,7 @@ export const ContainerStyled = styled.div`
     z-index: 1;
     position: absolute;
     left: 100px;
-    background-color: black;
+    background-color: #111;
     border-radius: 5%;
     width: 450px;
     //height: ;
