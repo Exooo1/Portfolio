@@ -1,31 +1,36 @@
-import React, {memo, useEffect} from "react";
+import React, {useEffect, memo} from "react";
 import {AvatarStyle, DescriptionStyle, MainStyle} from "./MainStyled";
 import {ContainerStyled} from "../common/CommonStyled";
-import me from '../../Image/me.png'
+import me2 from '../../Image/me2.jpg'
 import {useDispatch, useSelector} from "react-redux";
 import {ChangeAnimAC, ChangeCountAC, ChangeTextAC} from "../Store/main-reducer";
+import {SetRangeAC} from "../Store/menu-reducer";
 
-export const Main = memo(() => {
+export const Main = memo(({page}) => {
     const dispatch = useDispatch()
     const anim = useSelector(state => state.main.anim)
     const descrip = useSelector(state => state.main.descrip)
     const count = useSelector(state => state.main.count)
     const text = useSelector(state => state.main.text)
     let time = ''
-
     useEffect(() => {
         const h1 = "- I'M VLAS MASKALENCHIK."
         if (h1.split('')[count] !== undefined) return time = setTimeout(() => {
             dispatch(ChangeCountAC())
             dispatch(ChangeTextAC(h1.split('')[count]))
-        }, 200)
+        }, 100)
         clearTimeout(time)
         dispatch(ChangeAnimAC())
     }, [text])
+
+    useEffect(() => {
+        dispatch(SetRangeAC('Home', document.getElementById('home').clientHeight, 0))
+    }, [page])
+
     return <MainStyle id='home'>
         <ContainerStyled>
             <div className='image'>
-                <img src={me}
+                <img src={me2}
                      alt="avatar"/>
             </div>
             <AvatarStyle></AvatarStyle>

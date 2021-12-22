@@ -1,6 +1,3 @@
-import samurai from "../../Image/samurai.png";
-import todo from "../../Image/todo.jpg";
-import duo from "../../Image/duo.png";
 import phone from "../../Image/phone.png";
 import email from "../../Image/email.png";
 import location from "../../Image/location.png";

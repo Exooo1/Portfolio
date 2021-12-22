@@ -8,7 +8,7 @@ export const EmailMain = styled.div`
   align-items: center;
   flex-direction: column;
 
-  & > button {
+  .send {
     border: solid 2px #FFB400;
     background-color: #1d1b19;
     color: white;
@@ -17,15 +17,24 @@ export const EmailMain = styled.div`
     height: 50px;
     cursor: pointer;
     border-radius: 5px;
+    margin: 20px 0;
   }
 
-  & > button:active {
+  .divSubmit {
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .send:active {
     transition-duration: 100ms;
     border-right: solid;
     border-left: solid;
   }
 
-  & > textarea {
+  & > form > textarea {
     resize: none;
     border-radius: 10px;
     background-color: #1d1b19;
@@ -39,7 +48,7 @@ export const EmailMain = styled.div`
     font-size: 25px;
   }
 
-  & > textarea::placeholder {
+  & > form > textarea::placeholder {
     padding-left: 10px;
     color: grey;
   }
@@ -48,6 +57,7 @@ export const EmailMain = styled.div`
 export const EmailStyle = styled.div`
   height: auto;
   display: flex;
+  margin: 20px 0;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;

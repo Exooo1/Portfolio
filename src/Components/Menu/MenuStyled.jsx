@@ -78,7 +78,6 @@ export const LinkStyle = styled.a`
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  //background-color: #2B2A2A;
   background-color: ${props => props.color};
 
   & > img {

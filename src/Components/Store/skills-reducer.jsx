@@ -63,7 +63,7 @@ const initialState = {
             color: '#e7734e',
             skill: 'Git',
             src: git,
-            description: 'React — JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов. React разрабатывается и поддерживается Facebook, Instagram и сообществом отдельных разработчиков и корпораций. React может использоваться для разработки одностраничных и мобильных приложений.'
+            description: 'GitHub is the largest web service for hosting and developing IT projects. The web service is based on the Git version control system.'
         },
     ]
 }
