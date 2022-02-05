@@ -23,7 +23,6 @@ export const SkillsStyle = styled.div`
       opacity: 0.2;
       height: 0;
       color: white;
-
     }
 
     & > h1 {

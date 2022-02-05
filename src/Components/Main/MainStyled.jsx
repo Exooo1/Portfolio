@@ -55,6 +55,39 @@ export const DescriptionStyle = styled.div`
   justify-content: flex-end;
   flex-direction: column;
 
+  & > button {
+    :hover {
+      transition: 1s;
+      background-color: #FFB400;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :after {
+      color: white;
+      font-weight: 700;
+      border-radius: 90px;
+      content: '\\21E8';
+      font-size: 40px;
+      position: relative;
+      top: 0;
+      left: 7px;
+      width: 50px;
+      height: 50px;
+      background-color: #FFB400;
+    }
+
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+    background-color: #000000;
+    height: 50px;
+    border-radius: 90px;
+    border: solid 1px #FFC446;
+  }
+
   & > .animationText {
     animation: ${h1Animation} 900ms linear;
   }

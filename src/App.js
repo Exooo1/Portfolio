@@ -11,7 +11,6 @@ import {store} from './Components/Store/Store'
 export const App = () => {
     const [page, setPage] = useState()
     const [inner, setInner] = useState(0)
-    console.log(page,inner)
     useEffect(() => {
         window.addEventListener('scroll', () => {
             setPage(window.scrollY)
