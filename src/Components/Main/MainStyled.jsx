@@ -66,6 +66,8 @@ export const DescriptionStyle = styled.div`
     align-items: center;
 
     :after {
+      display: flex;
+      justify-content: center;
       color: white;
       font-weight: 700;
       border-radius: 90px;

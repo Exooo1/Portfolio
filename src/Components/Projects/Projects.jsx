@@ -1,4 +1,4 @@
-import React,{memo} from "react";
+import React, {memo} from "react";
 import {CreateProject} from "./Project/CreateProject";
 import {ProjectsStyle} from "./ProjectsStyled";
 import {CommonStyle} from "../common/CommonStyled";
@@ -13,7 +13,7 @@ export const Projects = memo(() => {
             <h2>PORTFOLIO</h2>
         </div>
         <CommonStyle>
-            {proj.map(item => <CreateProject key={item.id + item.title} title={item.title} project={item.project}/>)}
+            {proj.map(item => <CreateProject key={item.id + item.title}  link={item.href} title={item.title} project={item.project}/>)}
         </CommonStyle>
     </ProjectsStyle>
 })

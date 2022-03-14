@@ -10,7 +10,7 @@ export const Menu = memo(({page = 1, inner}) => {
     useEffect(() => {
         const allo = menus.map(item => {
             const c = document.getElementById(`${item.alt}`)
-            const d = c.offsetTop + 200 - c.clientHeight
+            const d = c.offsetTop + 280 - c.clientHeight
             if (d < page) {
                 return {...item, color: '#FFB400'}
             } else {
@@ -20,7 +20,7 @@ export const Menu = memo(({page = 1, inner}) => {
         setMenu(allo)
     }, [page])
     return <MenuStyle>
-        <DivStyle><ChildDivStyle size={page * line}></ChildDivStyle></DivStyle>
+        <DivStyle><ChildDivStyle size={page * line * 1.1}></ChildDivStyle></DivStyle>
         <div className='divStyle'>
             {menu.map(item => <LinkStyle color={item.color} href={item.href} title={item.title}><img
                 src={item.src}

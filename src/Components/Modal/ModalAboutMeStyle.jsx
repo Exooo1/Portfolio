@@ -9,7 +9,7 @@ export const ModalStyle = styled.div`
   overflow: auto;
   height: 70vh;
   @media (max-width: 720px) {
-   height: 82vh;
+    height: 82vh;
   }
 `
 export const ModalHeadStyle = styled.div`
@@ -50,14 +50,14 @@ export const ModalHeadStyle = styled.div`
 
     & > :first-child {
       position: relative;
-      top: 9px;
+      top: 5px;
       transform: rotate(-45deg);
     }
 
     & > hr {
       width: 45px;
       position: relative;
-      top: -4px;
+      top: -7px;
       border: none;
       transform: rotate(45deg);
       background-color: white;
@@ -71,8 +71,8 @@ export const ModalHeadStyle = styled.div`
     border: solid 2px #FFB400;
     background-color: #000000;
     border-radius: 90px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     color: black;
   }
 `
@@ -178,6 +178,8 @@ export const AboutMeStyle = styled.div`
         align-items: center;
 
         &:after {
+          display: flex;
+          justify-content: center;
           color: white;
           font-weight: 700;
           border-radius: 90px;
@@ -185,7 +187,7 @@ export const AboutMeStyle = styled.div`
           font-size: 30px;
           position: relative;
           top: 0;
-          left: 18px;
+          left: 19px;
           width: 38.5px;
           height: 38px;
           background-color: #FFB400;

@@ -72,7 +72,7 @@ export const Main = memo(({page}) => {
                                 <div className={'childExp'}>
                                     <div>
                                         <h1>6+</h1>
-                                        <p><span>-</span> MONTH OF EXPERIENCE</p>
+                                        <p><span>-</span> MONTHS OF EXPERIENCE</p>
                                     </div>
                                 </div>
                                 <div className={'childExp'}>
